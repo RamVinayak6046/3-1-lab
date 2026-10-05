@@ -1,0 +1,4 @@
+3
+Deposit 5000
+Withdraw 2000
+Deposit 1000

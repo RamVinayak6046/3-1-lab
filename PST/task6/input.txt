@@ -1,0 +1,4 @@
+3
+Bike 10
+Cab 15
+Auto 8

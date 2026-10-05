@@ -1,0 +1,20 @@
+import java.util.function.Function;
+
+public class CustomerOrderFunctionExample {
+
+    static void processOrder(double amount, Function<Double, Double> operation) {
+        double result = operation.apply(amount);
+        System.out.println("Final Amount: " + result);
+    }
+
+    public static void main(String[] args) {
+
+        double amount = 1000;
+        
+        processOrder(amount, a -> a - (a * 0.10));
+
+        processOrder(amount, a -> a - (a * 0.20));
+
+        processOrder(amount, a -> a);
+    }
+}
